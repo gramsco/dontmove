@@ -1,0 +1,46 @@
+main{
+    display:flex;
+    justify-content: center;
+    align-content:center;
+}
+
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(5,40px);
+    grid-template-rows: repeat(5,40px);
+    width:30vw;
+    height:30vw;
+}
+
+.rotate{
+    animation: 10s rotate forwards linear infinite;
+}
+
+@keyframes rotate{
+    
+
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+.container div{
+    opacity:0.5;
+}
+
+.container div:nth-child(even){
+    background:white;
+    border:black 1px solid;
+}
+
+
+.container div:nth-child(odd){
+    background:blue;
+}
+
+.container div:nth-child(13){
+    background:red;
+}
+
