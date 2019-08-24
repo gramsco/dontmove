@@ -17,30 +17,26 @@ main{
     animation: 10s rotate forwards linear infinite;
 }
 
-@keyframes rotate{
+/* @keyframes rotate{
     
 
     to{
         transform:rotate(360deg);
     }
-}
+} */
 
 
 .container div{
     opacity:0.5;
+    border:1px black solid;
 }
 
-.container div:nth-child(even){
-    background:white;
-    border:black 1px solid;
-}
-
-
-.container div:nth-child(odd){
-    background:blue;
-}
-
-.container div:nth-child(13){
+.red{
     background:red;
 }
+
+.green{
+    background:green;
+}
+
 
